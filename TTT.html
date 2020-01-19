@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Tic Tac Toe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=no"/>
+<!--scale_was=0.86 changed to 1 for PWA-->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<!-- link rel="shortcut icon" src=""> -->
+<meta name="manifest" src="./manifest.json">
+<meta name="theme-color" content="#001133"/>
+
+
+</head>
+
+<!--//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...HTML...^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//-->
+<body>
+
+<div id='container'> 
+    <section id='main-block'> 
+        <section class='main-itm' id='1'>1</section>
+        <section class='main-itm' id='2'>2</section>
+        <section class='main-itm' id='3'>3</section>
+        <section class='main-itm' id='4'>4</section>
+        <section class='main-itm' id='5'>5</section>
+        <section class='main-itm' id='6'>6</section>
+        <section class='main-itm' id='7'>7</section>
+        <section class='main-itm' id='8'>8</section>
+        <section class='main-itm' id='9'>9</section>
+    </section>
+    <section id='ext-block'>
+        <button  id='title'  class="ext-itm" onclick="game.about()">TIC <br>TAC <br>TOE </button>
+        <button  id='themeDL'class='theme ext-itm'  onclick="game.theme()">T</button>
+        <button  id='themeC' class='theme ext-itm'  onclick="game.theme(true)">C</button>
+        <button  id='new'    class='ext-itm' onclick="game.newGame()"> Reset Game </button>
+        <button  id='game'   class='ext-itm' onclick="game.player()"> Single Players </button>
+        <button  id='score'  class='ext-itm' style="text-align:left;"> Player X \u00A0:\u00A0 <p style="line-height: 2vmin"> ------------------</p> Player O \u00A0:\u00A0 </button>
+    </section>
+</div>
+<!--//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv.HTML.vvv //-->
+<link rel ='stylesheet'  type ='text/css' href ='./ttt.css'> </style>
+<script type ='text/javascript' src = './ttt.js'> </script> 
+
+
+</body>
+
+</html>
+<!--//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv.HTML.vvv //-->

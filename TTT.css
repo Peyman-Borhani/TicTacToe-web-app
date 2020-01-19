@@ -1,0 +1,179 @@
+/*<!--//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//-->*/
+/*<!--//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...CSS.Styles...^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//-->*/
+
+  /*-- CSS Variables Defined  in Root Element --*/
+  :root { background: var(--cont-C);  overflow: hidden; 
+
+        --cont-C: #100818;
+        --main-C: #0e0e0e0e;
+        --ext-C: #111;
+        --main-itm-C: #013;
+        --ext-itm-C: #000;
+        --ext-txt-C: #088;
+        --main-txt-C: red;
+        --logo-txt-C: #000;
+        --logo-btn-C: #111;
+        --newG-btn-C: #fae;
+        --newG-txt-C: aqua;
+        --game-btn-C: #14e;
+        --game-txt-C: #28f;
+        --score-btn-C: #001;
+        --score-txt-C: #001;
+        --main-sh-C: #013;
+        --ext-sh-C: #4cd;
+        --newG-sh-C: #a21;
+        --game-sh-C: #0a3;
+        --score-sh-C: #001;
+        --theme-btn-C: #eb1;
+        --blink-C: #014;
+        --trans-C: #c00;       
+        --txt-C: #def;
+        --t: #050;
+}
+
+    * {  margin:0; padding:0; border-radius: 2vmin; outline: none; user-select: none;  }
+
+    body{  position: relative;  cursor: pointer  }
+
+    div { text-align: center; font-size: 16vmin; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell,'Segoe UI', 'Open Sans', 'Helvetica Neue', Tahoma, sans-serif }
+
+  /* {  white-space:nowrap;  text-overflow: ellipsis;  overflow-wrap: normal} */
+    button { border: hidden; text-overflow: ellipsis; white-space: pre-wrap }
+         
+    img { max-width:100%; max-height: 100%; padding:0.8vmin; background-color: black }
+
+    #themeDL { grid-area: d; color: var(--txt-C)  }
+    #themeC { grid-area: c;  background: var(--theme-C)  }  
+
+    .theme { display: grid; padding: 1vmin 3vmin !important; background-color: var(--theme-btn-C); box-shadow: 0 0 2vmin var(--score-sh-C); color: var(--txt-C) !important } 
+        .theme:hover{  box-shadow: 0 0 4vmin var(--game-sh-C);  background-color: var(--cont-C); color: var(--theme-btn-C) !important }
+
+    #container { display: grid; justify-content: space-evenly; } /* max-height: 94vh */
+    #ext-block { display: grid;  align-content: space-between;
+                 background-color: inherit;/*  background-color: var(--ext-C) */
+                 border-style: ridge ; border-color: black;  /* Previous border-color: var(--ext-sh-C) */
+                 border-width: 0.36vmin  0.8vmin  0.2vmin 0.2vmin;
+                 padding: 0 2vmin;  box-shadow: 0 0 9vmin var(--ext-sh-C); 
+                }
+
+    #new {  display: grid;  grid-area: n;  color: var(--newG-txt-C);  background-color: var(--newG-btn-C);  box-shadow: 0 0 3.5vmin var(--newG-sh-C) }  
+    #new:hover { color: var(--newG-btn-C);  background-color: var(--newG-sh-C);  box-shadow: 0 0 4.5vmin var(--newG-sh-C) }
+
+    #game { display: grid;  grid-area: g;  color: var(--game-txt-C);  background-color: var(--game-btn-C);  box-shadow: 0 0 3.5vmin var(--game-sh-C) }  
+    #game:hover { color: var(--game-btn-C);  background-color: var(--game-sh-C);  box-shadow: 0 0 4.2vmin var(--game-sh-C);  }
+
+    #score { display: grid; grid-area: s;  color: var(--txt-C); background-color: var(--score-btn-C); box-shadow: 0 0 3.5vmin var(--score-sh-C) }/* align-self: flex-end */
+
+    #title { display: grid;  grid-area: t; background-color: var(--logo-btn-C); color: var(--logo-txt-C); padding-left: 2vmin; text-align: left } 
+    #title:hover{ color:  var(--logo-btn-C); box-shadow: 0 0 4vmin var(--logo-txt-C); background-color: var(--logo-txt-C) }
+
+    #info { display: grid;  grid-area: t; padding: 2vmin;
+            font-family: 'Segoe UI semilight', Calibri,Tahoma , fantasy, Tahoma, Geneva, Verdana, sans-serif, Luminari, Trattatello,  Helvetica, 'Arial Narrow Bold', sans-serif;
+            font-style: italic; font-size: calc(1.3vh + 1vw); line-height: calc(1.6vh + 1vw); text-align: left; 
+            color: var(--txt-C); box-shadow: 0 0 5vmin var(--game-sh-C); 
+    }
+
+    #main-block {  display: grid;       gap: 6vmin;
+                   padding: 3.2vmin;
+                   background-color: var(--main-C);
+                   border-color: var(--ext-sh-C);
+                   box-shadow: 0 0 4vmin var(--main-sh-C); /* #81a #5af; */
+    }
+    
+    .main-itm {  display: grid;             align-items:center;
+                 border-radius: 1.8vmin;    box-shadow: 0 0 3.2vmin var(--main-sh-C); /* #81a #5af; */ 
+                 color: var(--main-txt-C);  background-color: var(--main-itm-C);
+        }
+        .main-itm:hover{  background-color: var(--main-sh-C); box-shadow: 0 0 7vmin var(--main-sh-C) } 
+        .main-itm:active { transition: all 0.04s ease-out; transform: scale(0.88) }
+
+
+    .ext-itm {  cursor: grab; overflow: hidden; /* preventing extra text from disrupting UI*/
+                line-height: 9vmin;                     color: var(--ext-txt-C); 
+                letter-spacing: 0.3vmin;                background-color: var(--ext-itm-C); 
+                word-spacing: 0.1vmin;                  box-shadow: 0 0 3vmin var(--ext-sh-C);               
+        }
+        .ext-itm:hover { transition: all 0.06s ease-out; transform: scale(1.15); opacity: 1 }
+        .ext-itm:active { transition: all 0.05s ease-out; transform: scale(0.8); opacity: 0.4 }
+
+@media screen and (orientation: landscape)  {
+
+    #container  { grid-template-columns: calc(57vw + 10vh) calc(22vw + 8vh); margin: calc( 7vh - 1vw ) calc( 3vh + 3vw ); gap: 2.8vw }
+    #main-block { grid-column: 1; grid-template: repeat(3, minmax( 20vh , 23.6vh )) / repeat(3, minmax(17.4vw, 19vw ));  }
+    #ext-block  { grid-column: 2; justify-self: end; gap: 3vmin 1.5vmin;
+                  transform: translate(3%, 0.4%) skew(0.6deg, 5deg) rotateY(7deg) ;
+                  grid-template-areas:
+                                        ". d d . t t t ."
+                                        ". c c . t t t ."
+                                        ". c c . t t t ."
+                                        ". . . . . . . ."
+                                        ". n n n n n n ."
+                                        ". n n n n n n ."
+                                        ". . . . . . . ."
+                                        ". g g g g g g ."
+                                        ". g g g g g g ."
+                                        ". . . . . . . ."
+                                        ". s s s s s s ."
+                                        ". s s s s s s ."
+                                        ". . . . . . . .";
+                }
+    .ext-itm { line-height: 9vmin ; font-size: calc(2vh + 1.32vw); }  
+    #title { font-size: calc(4.6vh + 2vw);  line-height: calc(5.4vh + 1.7vw); align-self: flex-start; margin-top: 2.4vmin } 
+    #themeDL{  align-self: flex-start; margin-top: 2.4vmin }
+    #info {  width:120%; background-color: #014;
+            transform: translate(-10%, 4%) skew(1deg,7deg) rotateY(6deg) ;
+             word-spacing: 0.2vw;  letter-spacing: 0.1vw }
+             
+    button { font-size: calc(1.6vh + 1.2vw); font-weight: 455 }
+}
+
+
+@media screen and (orientation: portrait)  {
+
+    #container      { margin-top: calc(8vh - 5vw); gap: calc(39vh - 49vw);  grid-template: calc(23.6vh + 46vw) calc(24.4vh + 10vw) / 95vw  } /* 45vh 35vh */
+    #main-block     { grid-row: 1; gap: 5vmin;  grid-template: repeat( 3, calc(7vh + 10vw)) / repeat(3, 25vw) }
+    #ext-block      { grid-row: 2; overflow: hidden;  box-shadow: 0 0 3vmin var(--ext-sh-C);
+                      gap: calc(1vh - 1vw) 4vw; justify-content: space-evenly;
+                      grid-template-areas:  ". . . . . . . . ."
+                                            "g g g g g . n n n"
+                                            ". . . . . . . . ."
+                                            "s s s s s c d t t" 
+                                            ". . . . . . . . .";
+                     }
+                     
+    .ext-itm {  font-size: calc(1.5vh + 1.8vw); line-height: calc(6vh + 2vw)  }
+    #score { line-height: 4vh }
+    button {  font-size: calc(1.9vh + 1.2vw);  }  
+
+    #title { font-size: calc(2vh + 2.6vw);  line-height: calc(3.2vh + 1vw);  text-align: center;   box-shadow: 0 0 6vmin #640 } 
+
+    #info { word-spacing: 0.1vmin;  width:130%; 
+            transform: translate(-26%,-3%) skew(10deg,-2deg) rotateY(-4deg) ; }
+}
+
+/*-- // Animations \\ --*/
+.glow { animation: glow 0.8s ease-in running alternate-reverse }
+@keyframes glow { from {  box-shadow: 0 0 4vmin var(--ext-itm-C) } to {  box-shadow: 0 0 4vmin #002 } }
+
+/*-- Simulating a Text Blink --*/
+.blink { animation: blink 5.8s infinite alternate-reverse ease-in-out both }
+@keyframes blink { from {color: var(--trans-C);  transform: rotateX(10deg) rotateY(0deg); background-color: var(--blink-C) } to { color:black ;  transform: rotateX(180deg) rotateY(180deg); background-color:var(--trans-C); box-shadow: 0 0 4vmin blue } }
+
+/*-- Slide Transition --*/
+.trans { animation: trans 5.8s infinite alternate-reverse ease-in-out running }
+@keyframes trans { from {color: black;  background-color: var(--trans-C);  box-shadow: 0 0 4vmin blue }  to   { color: var(--trans-C); transform: rotateY(180deg); background-color: var(--blink-C) } }
+
+.t-fade { transform: translate(0); animation: t-fade 0.8s ease-in running both }
+@keyframes t-fade { from{  opacity : 0.4 }  to  { opacity: 1 } }
+
+.n-blink { animation: n-blink 0.6s  5 ease-in running alternate-reverse }
+@keyframes n-blink { from {  box-shadow: 0 0 4vmin var(--ext-itm-C) } to {  box-shadow: 0 0 4vmin #002 } }
+
+.vr-slide { opacity : 1; transform: translate(0);  transform: none }
+.vi-slide { animation: vi-slide 0.78s  1 ease-out }
+.vo-slide { animation: vo-slide 0.78s  1 ease-in-out}
+
+@keyframes vi-slide {  from { opacity : 0.3; transform: translate(20%, 110%)  }  to  { opacity : 1; transform: translate(0, 5%) skew(1deg,12deg) rotateY(-4deg)  } }
+@keyframes vo-slide {  from { opacity : 1; transform: translate(0, 5%) skew(1deg,12deg) rotateY(-4deg) }  to  {  opacity : 0.3; transform: translate(0, 110%)  } }
+
+/*//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv...CSS.Styles...vvvv//*/

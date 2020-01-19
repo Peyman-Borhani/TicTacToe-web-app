@@ -1,4 +1,4 @@
-# TicTacToe-web-app
+# TicTacToe Web app
 This project is a Progressive web app game I made to practice new web standards:  
 ES6+, Javascript, CSS Grid / Houdini, PWA...
 

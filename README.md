@@ -1,21 +1,19 @@
 # TicTacToe Web app
-This project is a Progressive web app game I made to practice semi native looking development without any dependencies.  
-Other goals are: using new web standards, Vanilla JS, practice Design, UI-UX, unified architecture coding pattern:  
-ES6+ / Vanilla JavaScript, new CSS Grid / Houdini, PWA. used for coding.
+A Progressive web app game I made to practice using only Vanilla JS and new web standards.
 
-Just copy the HTML/JS/CSS files and execute, it runs on your web based environment or chrome/most recent browsers.
-Other files are not mandatory, just an attempt to make a android app by TWA. also you can edit it into a single HTML file, to act like a executable file, no frameworks, dependencies, etc needed...  Enjoy the Tic Tac Toe Game.  
+Just copy the HTML/JS/CSS files and execute, and execute the html, it simply works.
+Enjoy the Tic Tac Toe Game.... 
 
 ## Features
-- The Web app consists of 3 files: HTML, JS, CSS. (other files can be ignored or included)  
-- Offline, no dependencies, frameworks, etc...  
-- Can easily be made into a desktop app, or android mobile app using TWA to playstore.  
-- Can merge into a single html file and be sent to others in most messengers (seems like a messenger app).  
+- The Web app consists of 3 files: HTML, JS, CSS. (other files can be ignored)  
+- Offline, no dependencies, no frameworks, etc...  
+- Flexible dynamic UI sizing based on aspect ratio: desktop, mobile, tblet watch,...
 - New standard web development features: ES6+, CSS Grid, custom variables,...  
-- Personal made simple algorithm and game logic, human thought logical conditions for user to win if make effort..  
+- Single vs Computer, or double players.
+- Made my own algorithm and game logic, restricted computer's decision chances so the user has a chance to win.  
 
 ## Design
-- Dynamic Responsive design: calculate and scale, window/view dimensions in real time to any possible sizes.  
+- Realtime dynamic responsive design: calculate and scale, window/view dimensions by Aspect Ratio.  
 - Nice and Native app : Mobile, Desktop, Phablet, Tablet in full screen.  
-- Simple Abstract design, Dark and Light mode, color theme sets.  
-- Visual Effects, Trsnsitions, animations, color calculations, filters...  
+- Color Theme sets, Dark and Light mode, and minimalism design.  
+- Using visual effects, trsnsitions, animations, color calculations, filters...  
